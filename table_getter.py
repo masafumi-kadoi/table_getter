@@ -11,6 +11,7 @@ TABLE_LIST = ["A", "B"]
 
 ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
 DUMP_DIR = os.path.join(ROOT_DIR, "dump")
+os.makedirs(DUMP_DIR, exist_ok=True)
 
 
 def write_json(data_dict: dict | list, write_dir_path: str, file_name: str) -> None:
